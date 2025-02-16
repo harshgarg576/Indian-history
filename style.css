@@ -1,0 +1,105 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f7; /* Light and cheerful background */
+  }
+  
+  header {
+    background-color: #3a6351; /* Earthy green for authenticity */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo svg {
+    margin-bottom: 10px;
+  }
+  
+  main {
+    margin-top: 100px;
+    padding: 20px;
+    padding-bottom: 60px; /* Space for footer */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .place {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .place img {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover;
+    border: 2px solid #e0e0e0; /* Minimal border around images */
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .place-content {
+    padding: 15px;
+  }
+  
+  .place h2 {
+    color: #3a6351; /* Matching header color */
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+  }
+  
+  .place p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  footer {
+    background-color: #3a6351; /* Matching header color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Authentic sections */
+  .about-section, .importance-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-section h2, .importance-section h2 {
+    color: #3a6351;
+    margin-bottom: 10px;
+  }
+  
+  .about-section p, .importance-section p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+    
+    header h1 {
+      font-size: 1.2rem;
+    }
+
+    .img {
+      height: 50px;
+    }
+  }
